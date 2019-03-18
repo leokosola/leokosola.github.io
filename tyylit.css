@@ -1,0 +1,29 @@
+.wrap {
+  width: 100%;
+  margin: 0;
+}
+
+#karuselli {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  background: darkkhaki;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+#box1, #box2, #box3, #box4, #box5 {
+  border: solid 5px;
+  min-width: 100px;
+  height: 200px;
+  align-self: center;
+  position: relative;
+}
+
+#box1 {background: cyan; left: 100px;}
+#box2 {background: darkgreen; left: 150px;}
+#box3 {background: darksalmon; left: 300px;}
+#box4 {background: firebrick;}
+#box5 {background: lawngreen; left: 600px;}
