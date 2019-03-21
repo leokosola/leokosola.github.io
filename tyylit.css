@@ -1,29 +1,175 @@
 .wrap {
   width: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 #karuselli {
   width: 100%;
   max-width: 1000px;
   margin: auto;
-  background: darkkhaki;
+  /* background: darkkhaki; */
   height: 300px;
   display: flex;
   align-items: center;
   overflow: hidden;
+  transform: rotate3d(1, 1, 1, 30deg);
 }
 
-#box1, #box2, #box3, #box4, #box5 {
+a {
+  animation-name: colors;
+  animation-duration: 10s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colors {
+  0% {color: #0000ff;}
+  30% {color: rgb(173, 94, 4);}
+  60% {color: rgb(80, 121, 0);}
+  90% {color: rgb(168, 0, 168)0, 204, 255);}
+}
+
+.huomio {
+  margin: 5px auto;
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border: 3px solid #131313; 
+  padding: 20px; 
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+.huomio:hover {
+  background: lemonchiffon;
+}
+
+#box1, #box2, #box3, #box4 {
   border: solid 5px;
-  min-width: 100px;
+  min-width: 150px;
   height: 200px;
   align-self: center;
   position: relative;
 }
 
-#box1 {background: cyan; left: 100px;}
-#box2 {background: darkgreen; left: 150px;}
-#box3 {background: darksalmon; left: 300px;}
-#box4 {background: firebrick;}
-#box5 {background: lawngreen; left: 600px;}
+#box1 {background: url(omakuva.png) cyan; background-size: cover;}
+#box2 {background: url(omakuva.png) darkgreen; background-size: cover;}
+#box3 {background: url(omakuva.png) darksalmon; background-size: cover;}
+#box4 {background: url(omakuva.png) firebrick; background-size: cover;}
+/* #box5 {background: url(omakuva.png) lawngreen; background-size: cover;} */
+
+/* html {
+  filter: grayscale(100%);
+} */
+
+body {
+  /* background: #ffff43; */
+  font-family: monospace;
+}
+
+h1, h2, h3, h4 {
+  font-family: sans-serif;
+}
+
+.speakers-intro-block {
+	grid-column: 1/3;
+  grid-row: 1/3;
+  border: solid 1px #000;
+	background-color: #fff;
+	padding: 30px;
+  /* margin: 0px 20px; */
+}
+
+
+@media only screen and (min-width: 800px) {
+
+  .speakers-gridi {
+		display: grid;
+		grid-gap: 1vw;
+		justify-content: center;
+		width: 100%;
+		max-width: 800px;
+		grid-template-columns: repeat(4, 200px);
+		grid-template-rows: repeat(3, 200px);
+		margin-left: auto;
+		margin-right: auto;
+    padding: 30px 0;
+
+	}
+
+}
+
+
+.modaali {
+	z-index: 3;
+	display: none;
+	padding-top: 10px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	/* width: 100%;
+	height: 100%; */
+	overflow: auto;
+	/* background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); */
+  /* margin: auto; */
+}
+
+.modaalin-sisältö {
+	margin: auto;
+	background-color: #000;
+	position: relative;
+	padding: 0;
+	outline: 0;
+  max-width: 900px;
+  color: #fff;
+}
+
+.sisältöboksi {
+	padding: 0.01em 16px;
+}
+
+.raksi {
+	position: absolute;
+	right: 25px;
+	top: 60px;
+	font-size: 3.5em;
+}
+
+.raksi:hover {
+	cursor: pointer;
+}
+
+
+.info-modaalissa {
+	/* float: left; */
+	background: #fff;
+	color: #131313;
+	padding: 40px;
+	/* margin-right: 30px;
+	margin-top: 30px; */
+	/* position: sticky; */
+	top: 0px;
+	/* grid-column: 1/2;
+	grid-row: 1/2; */
+	max-width: 300px;
+	margin: auto;
+}
+
+.info-modaalissa h2 {
+	font-size: 1.5em;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+	.info-modaalissa h2 {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+
+	.info-modaalissa {
+	}
+
+}
