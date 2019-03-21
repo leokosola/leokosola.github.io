@@ -53,7 +53,7 @@ a {
   position: relative;
 }
 
-#box1 {background: url(https://github.com/leokosola/leokosola.github.io/blob/master/omakuva.PNG) cyan; background-size: cover;}
+#box1 {background: url(https://raw.githubusercontent.com/leokosola/leokosola.github.io/master/omakuva.PNG) cyan; background-size: cover;}
 #box2 {background: url(https://github.com/leokosola/leokosola.github.io/blob/master/omakuva.PNG) darkgreen; background-size: cover;}
 #box3 {background: url(https://github.com/leokosola/leokosola.github.io/blob/master/omakuva.PNG) darksalmon; background-size: cover;}
 #box4 {background: url(https://github.com/leokosola/leokosola.github.io/blob/master/omakuva.PNG) firebrick; background-size: cover;}
