@@ -1,126 +1,75 @@
+<!DOCTYPE html>
 <html>
   <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Leo Kosola</title>
-
-    <link rel="stylesheet" href="tyylit.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
-
-    <script src="p5.dom.min.js"></script>
-    
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+  <meta name="author" content="Leo Kosola">
+  <meta name="description" content="Web portfolio">
+  <meta name="keywords" content="web design, web development">
+  <link rel="stylesheet" href="tyylit.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
   </head>
-    <body>
-
-    <!-- <main class="speakers-gridi">
-
-      <div class="speakers-intro-block">
-
-        <h1 class="speakers-otsikko">
-        Leo Kosola
-        </h1>
-
-        <p class="speakers-kuvaus">
-        Journalist and New Media Designer who likes to code. This is my on-going portfolio. Last update: <i>never</i>
-        </p>
+  <body>
+    <div class="wrap">
+      <div class="me">
+          <h1 class="">
+            Leo Kosola
+          </h1>
+          <p class="subtitle">
+            Web Portfolio
+          </p>
+          <p class="kuvaus">
+            Hi, I am journalist and new media designer who likes to code. <br>Here is some of my works and experiments.
+          </p>
+      </div>
+      <div class="works">
+        <!-- <h2 class="">=====<br>Works</h2> -->
+        <li class="">
+          <ul class="">
+            <a href="https://vizknowledge.aalto.fi/" title="Visualizing Knowledge 2019" class="">
+              Visualizing Knowledge 2019
+            </a>
+            <p class="">Website for annual information design conference organized by Aalto University. Layout by Saara Majanne.</p>
+            <img src="./images/vk 1.png" id="vk" style="width: 100%; max-width: 500px;">
+          </ul>
+          <ul class="">
+            <a href="https://creativefutures.aalto.fi/" title="Aalto Creative Futures" class="">
+              Creative Futures
+            </a>
+            <p class="">Website for Aalto University's project promoting creative fields. Layout and illustrations by Julia Sand, infographics by Ilkka Malin.</p>
+            <img src="./images/vcf.png" id="vcf" style="width: 100%; max-width: 500px;">
+          </ul>
+          <ul class="">
+            <a href="https://l8-nite-volley.glitch.me/" title="Slime volleyball homage" class="">
+              Slime volleyball homage
+            </a>
+            <p class="">
+              Lightweight 2-player browser game. Homage to Slime Volleyball that we used to play a lot in Upper Secondary school. Written in Javascript using P5 library.
+            </p>
+            <img src="./images/slime.png" id="slime" style="width: 100%; max-width: 500px;">
+          </ul>
+          <ul class="">
+            <a href="https://leokosola.github.io/kaltaisesi/" title="Kaltaisesi kansanedustajat" class="">
+              Kaltaisesi web app demo
+            </a>
+            <p class="">
+              Made a web app experiment with React. Interactive app to filter data of elected parliament members to see how many of them reminds you.
+            </p>
+            <img src="./images/kaltaisesi.png" id="kaltaisesi" style="width: 100%; max-width: 500px;">
+          </ul>
+          <ul class="">
+            <a href="https://leokosola.github.io/kuntavaalidata/" title="Kuntavaalit story" class="">
+              Kuntavaalit story demo
+            </a>
+            <p class="">
+              Made an experiment of storytelling with data visualizations. Tried scroll-based triggering and D3.js. It's about differences in male/female candidates in municipality elections in Finland.
+            </p>
+            <img src="./images/kunta.png" id="kunta" style="width: 100%; max-width: 500px;">
+          </ul>
+        </li>
 
       </div>
-      <div style="border: solid 2px #0000ff">
-        <h2>#SOTA39</h2>
-      </div>
-      <div style="border: solid 2px #00fff0"></div>
-      
-      <a onclick="document.getElementById('modaali1').style.display='block';
-          document.getElementById('html').style.overflowY='hidden'" class="ruutu">
-
-        <span id="ruutu1-txt" class="ruutu-txt">
-          <h3>Hip Pong</h3>
-          <span>Two player body movement game</span>
-          <span>2018</span>
-        </span>
-
-      </a>
-    </main>
-      <div id="modaali1" class="modaali">
-
-        <div class="modaalin-sisältö">
-    
-          <div class="sisältöboksi">
-    
-            <span onclick="document.getElementById('modaali1').style.display='none';
-                    document.getElementById('html').style.overflowY='scroll'" 
-            class="raksi">&times;
-            </span>
-            
-            <div class="puhujasta">
-    
-              <div class="info-modaalissa">
-                <p>Hip Pong is a two-player game of pong controlled with hip movement. The movement is detected using two Kinects. The image of the game is projected from the ceiling to the floor with a projector and a mirror. The game was programmed using Processing program.</p>
-                <p>The guiding theme of the project was proxemics. It was implemented using game mechanics that moves the player’s paddle closer to the other player’s side every time a player scores a point.</p>
-                <p>Hip Pong was the final project for the course Bodily Interaction and was made by Nicola Cerioli, Juhani Halkomäki, Kevan Murtagh, and me. My role and learning outcomes in the project were mainly creating the concept, looking into sounds and how to project, investigating the possibilities of spatial sound and enhanced visualization for instance projection to smoke, and use of lasers, testing, learning Processing.</p>
-              </div>
-    
-            </div>				
-    
-          </div>
-    
-        </div>
-    
-      </div>
-
-      <div style="border: solid 2px #ff0000"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- -->
-
-      <div class="wrap">
-        <div id="karuselli">
-          <div id="box1" class="box"></div>
-          <div id="box2" class="box"></div>
-          <div id="box3" class="box"></div>
-          <div id="box4" class="box"></div>
-          <div id="box5" class="box"></div>
-        </div>
-      </div>
-
-      <div class="huomio">
-        <!-- <img src="deargod.gif" style="transform: scale(0.75, 0.75);"/> -->
-        <p>Hello, <br><br>You landed Leo Kosola's web page.</p>
-        <p>This used to be and will be my web portfolio, but sadly it is now under construction.</p>
-        <p>Meanwhile, feel free to download<br>
-          <a href="https://drive.google.com/open?id=11EqQIe1VCvXoVFDXdibWZXZWrtFhDXbr" title="Leo Kosola Portfolio 2018">my portfolio as pdf</a> (updated in Spring 2018).</p> </p>
-        
-      </div>
-
-
-      <script src="sketsi.js">  
-        
-
-      </script>
-
-    </body>
+    </div>
+  </body>
 </html>
