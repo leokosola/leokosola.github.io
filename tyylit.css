@@ -16,10 +16,6 @@ body {
 	text-align: center;
 }
 
-.subtitle {
-	font-size: 1.25em;
-}
-
 .kuvaus {
 	font-size: 0.9em;
 }
@@ -49,4 +45,40 @@ ul {
 
 footer {
 	margin: 50px 10px 20px 10px;
+}
+
+.main-title, .subtitle {
+  text-align: center;  
+  transform: scale(.9) translateY(5px) skewY(2deg);
+  filter: BLUR(4px);
+}
+
+.main-title {
+	animation-name: tulo;
+	animation-duration: 6s;
+	animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.subtitle {
+	font-size: 1.25em;
+	animation-name: tulo;
+	animation-duration: 5s;
+	animation-delay: 1.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+@keyframes tulo {
+  from {
+    transform: scale(.9) translateY(5px) skewY(2deg); filter: BLUR(4px);
+  } 
+  to {transform: scale(1) translateY(0px); filter: BLUR(0px);
+  }
+}
+
+
+img:hover {
+	filter: grayscale(100%);
 }
